@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+body{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+    
+}
+a{
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.nav-bar span{
+    margin: 0 5px;
+}
+.icon{
+    width: 27px;
+    height: 27px;
+    margin-bottom: -10px;
+}
+.btn{
+    display: inline-flex;
+    border-radius: 2px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #4285f4;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+    border-top: 2px solid #4285f4;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #757575;
+    font-weight: bold;
+    margin-bottom: 100px;
+
+}
+.mic{
+    height: 26px;
+    cursor: pointer;
+    position: relative;
+    top: 57px;
+    margin-left: 60px;
+}
+input{
+    height: 42px;
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    border-radius: 40px;
+    padding: 10px;
+    box-shadow: 0px 1px 2px grey;
+    margin: 20px;
+    width: 445px;
+    margin-right: 80px;
+}
+input:hover, input:active{
+    box-shadow: 0 1px 4px grey;
+}
+.langues{
+    margin-top: 35px;
+}
+.langue{
+    text-decoration: none;
+    color: #4285f4;
+    font-style: normal;
+    padding: 5px;
+}
+.search span a{
+    background: #f2f2f2;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.search span a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #dfdfdf;
+    color: black;
+}
+.footer{
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+.footer a{
+        margin: 10px;
+}
+.haut{
+    border-top: 2px solid #dfdfdf;
+    border-bottom: 2px solid #dfdfdf;
+    padding-bottom: 5px;
+}
+.Niger{
+    padding-top: 4px;
+}
+.bas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:10px;
+}
+.left{
+    padding-right: 5px;
+}
+.right{
+    padding-right: 25px;
+}
+@media screen and (max-width: 560px){
+    input{
+        width: 350px;
+    }
+    .google{
+        
+    }
+    .mic{
+        margin-left: 75%;
+    }
+}
